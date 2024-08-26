@@ -4,16 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media_query.css">
   <title>US Telephone Number Validator</title>
 </head>
 <body>
+  <div id="img"></div>
   <main id="cntr">
+    <h2>Insert your phone number</h2>
     <input type="text" id="user-input" autocomplete="off">
-    <input type="button" value="Check" id="check-btn">
-    <input type="button" value="Clear" id="clear-btn">
+    <div id="btns">
+      <input type="button" value="Check" id="check-btn">
+      <input type="button" value="Clear" id="clear-btn">
+    </div>
     <div id="results-div"></div>
   </main>
   <script src="script/main.js"></script>
+  <!-- 
+    special thanks to @sergiorojoes (https://www.freepik.com/author/sergiorojoes/2#uuid=7f19446b-9292-4919-8665-8e96a02a2a1f) for the redphone pic
+  -->
   <!-- 
     V - You should have an input element with an id of "user-input"
     V - You should have a button element with an id of "check-btn"
