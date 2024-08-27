@@ -40,7 +40,7 @@ h2 {
 #btns {
   margin: auto;
 }
-[type=button] {
+button {
   min-width: 55px;
   width: 10%;
   height: 25px;
