@@ -49,8 +49,11 @@ h2 {
 #check-btn {
   margin: 10px auto
 }
-
 #results-div {
   margin: auto;
   height: 1rem;
+}
+
+a {
+  color: red;
 }
