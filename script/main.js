@@ -8,7 +8,6 @@ const phoneChecker = () => {
     const regex1 = /^([1](\s|-)?)?((?:^)?[0-9][0-9][0-9])(\s|-)?([0-9][0-9][0-9])(\s|-)?([0-9][0-9][0-9][0-9])(?:\s|$)/
     const regex2 = /^([1](\s|-)?)?((?:^)?\([0-9][0-9][0-9]\))(\s|-)?([0-9][0-9][0-9])(\s|-)?([0-9][0-9][0-9][0-9])(?:\s|$)/
 
-
     const isInputOk = input.match(regex1) || input.match(regex2)
 
     isInputOk ?
@@ -27,6 +26,3 @@ check_btn.onclick = phoneChecker
 clear_btn.onclick = () => res.innerText = ""
 
 document.addEventListener("keydown", (e) => e.key === "Enter" ? check_btn.click() : null)
-
-// /(?:\s|^)[1]?(?:\s|^)(\s|-)?([0-9][0-9][0-9])(\s|-)?([0-9][0-9][0-9])(\s|-)?([0-9][0-9][0-9][0-9])(?:\s|$)/
-// /(?:\s|^)[1]?(?:\s|^)(\s|-)?(\([0-9][0-9][0-9]\))(\s|-)?([0-9][0-9][0-9])(\s|-)?([0-9][0-9][0-9][0-9])(?:\s|$)/
